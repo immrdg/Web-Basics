@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.1/styles/mono-blue.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="head">Python Tutorial 1-Data Types</div>
+<div class="navbar">
+     <a href="#int">Integer</a>
+    <a href="#floats">Float</a>
+    <a href="#complex">Complex Numbers</a>
+    <a href="#strings">Strings</a>
+    <a href="#bool">Boolean</a>
+  </div>
+  
+  <div class="main"  id="dtypes">
+    <h1>Basic Data Types in Python</h1>
+    <h2>Here’s what you’ll learn in this tutorial:</h2>
+    <ul>
+        <li>You’ll learn about several basic <b>numeric</b>, <b>string</b>, and <b>Boolean</b> types that are built 
+            into Python. By the end of this tutorial, you’ll be familiar with what objects of 
+            these types look like, and how to represent them.
+            </li>
+    </ul>
+    <br>
+    <h3 id="int">Integers</h3>
+    <p>Integers don’t have decimal points but can be positive, negative, or zero. </p>
+    <p>In Python 3, there is effectively no limit to how long an integer value can be. Of course, it is constrained by the amount of memory your system has, as are all things, but beyond that an integer can be as long as you need it to be:</p>
+    <pre><code class="hljs language-python">print(123123123123123123123123123123123123123123123123 + 1)
+#output>> 123123123123123123123123123123123123123123123124</code></pre>
+    <p>Python interprets a sequence of decimal digits without any prefix to be a decimal number:</p>
+    <pre><code class="hljs language-python">print(10)
+#output>> 10</code></pre>
+<br>
+<p>The following strings can be prepended to an integer value to indicate a base other than 10:</p>
+     <img src="Integers.jpg" alt="">
+     <pre><code class="hljs language-python">print(0o10)
+#output>> 8
+
+print(0x10)
+#output>> 16
+
+print(0b10)
+#output>> 2
+        </code></pre>
+        <p>For more information on integer values with non-decimal bases, see the following Wikipedia sites: <a href="https://en.wikipedia.org/wiki/Binary_number">Binary</a>, <a href="https://en.wikipedia.org/wiki/Octal">Octal</a>, and <a href="https://en.wikipedia.org/wiki/Hexadecimal">Hexadecimal</a>.</p>
+    <h3 id="floats">Floating-Point Numbers</h3>
+     <p>
+        Fractional numbers are expressed using numbers before and after a decimal point using the float type.
+        Like integers, these numbers can be positive or negative. You don’t have to do anything particularly
+        special to assign a float to a variable; if you use a decimal point in the number, Python will assume that
+        it’s a float.</p>
+        <pre><code class="language-python">muscle = 2.9
+brainz = -13.678
+speed = 0.0</code></pre>
+        <p> if the part after the decimal point is zero, the number is considered to be a float. Floats can be
+        manipulated using the same operators as integers, returning any fractional part as well. </p>
+     </p>
+     <h3 id="complex">Complex Numbers</h3>
+     <p>Complex numbers are specified as &lt;real part>+&lt;imaginary part>j. For example:</p>
+     <pre><code class="language-python">>>> 2+3j
+(2+3j)
+>>> type(2+3j)
+&lt;class 'complex'></code></pre>
+<h3 id="strings">Strings</h3>
+<p>Strings are sequences of character data. The string type in Python is called <i>str</i>. <br><br>
+
+    String literals may be delimited using either single or double quotes. All the characters between the opening delimiter and matching closing delimiter are part of the string:</p>
+<pre><code>>>> print("I am a string.")
+I am a string.
+
+>>> type("I am a string.")
+&lt;class 'str'>
+    
+>>> print('I am too.')
+I am too.
+
+>>> type('I am too.')
+&lt;class 'str'></code></pre>  
+<h3 id="bool">
+    Boolean Type, Boolean Context, and “Truthiness”
+</h3>  
+<p>Python 3 provides a Boolean data type. Objects of Boolean type may have one of two values, True or False:</p>
+<pre><code>>>> type(True)
+&lt;class 'bool'>
+>>> type(False)
+&lt;class 'bool'></code></pre>
+<p>As you will see in upcoming tutorials, expressions in Python are often evaluated in Boolean context, meaning they are interpreted to represent truth or falsehood. A value that is true in Boolean context is sometimes said to be &ldquo;truthy,&rdquo; and one that is false in Boolean context is said to be &ldquo;falsy.&rdquo; (You may also see &ldquo;falsy&rdquo; spelled &ldquo;falsey.&rdquo;)</p>
+<p>The &ldquo;truthiness&rdquo; of an object of Boolean type is self-evident: Boolean objects that are equal to&nbsp;<code>True</code>&nbsp;are truthy (true), and those equal to&nbsp;<code>False</code>&nbsp;are falsy (false). But non-Boolean objects can be evaluated in Boolean context as well and determined to be true or false.</p>
+</div>
+
+
+</body>
+</html>
